@@ -102,5 +102,5 @@ for start_row, end_row in zip(table_flags, table_flags[1:]):
     print('COMMENT ON TABLE "' + db_name + '"."' + table_name.lower() + '" IS \'' + table_desc + '表\';')
     print('')
     for item in desc_codes:
-        print('COMMENT ON COLUMN "' + db_name + '"."' + table_name.lower() + '".' + item)
+        print('COMMENT ON COLUMN "' + db_name + '"."' + table_name.lower() + '".' + item + ";")
     print('')
